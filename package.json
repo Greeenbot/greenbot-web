@@ -1,0 +1,28 @@
+{
+  "name": "greenbot-web",
+  "version": "1.0.0",
+  "description": "Web interface for Greenbot",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "nodemon ./server/server.js --ignore 'client/*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Greeenbot/greenbot-web.git"
+  },
+  "author": "camwhite",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Greeenbot/greenbot-web/issues"
+  },
+  "homepage": "https://github.com/Greeenbot/greenbot-web#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.0",
+    "nodemon": "^1.12.1"
+  }
+}
