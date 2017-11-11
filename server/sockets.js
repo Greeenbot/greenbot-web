@@ -7,7 +7,7 @@ const bindListeners = (io) => {
   io.on('connection', (socket) => {
     console.log(chalk.green(`socket ${socket.id} connected`))
 
-    socket.on('disconnect', () => console.log(chalk.yellow(`socket ${socket.id} disconnected`)))
+    socket.on('disconnect', () => console.log(chalk.red(`socket ${socket.id} disconnected`)))
   })
 }
 

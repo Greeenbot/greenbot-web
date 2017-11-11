@@ -8,9 +8,9 @@ const app = require('./app')
 const port = process.env.PORT || 9001
 
 app.set('port', port)
-//if (process.env.NODE_ENV !== 'production') {
-  //require('../webpack')(app)
-//}
+if (process.env.NODE_ENV !== 'production') {
+  require('../webpack')(app)
+}
 
 const httpServer = http.createServer(app)
 
